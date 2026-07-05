@@ -82,7 +82,7 @@ export default function AnalyticsPage() {
                     ))}
                   </Pie>
                   <RechartsTooltip 
-                    formatter={(value: number) => `$${value.toLocaleString(undefined, { minimumFractionDigits: 2 })}`}
+                    formatter={(value: any) => `$${Number(value).toLocaleString(undefined, { minimumFractionDigits: 2 })}`}
                     contentStyle={{ backgroundColor: 'rgba(0,0,0,0.8)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)' }}
                     itemStyle={{ color: '#fff' }}
                   />
@@ -107,7 +107,7 @@ export default function AnalyticsPage() {
                   <XAxis dataKey="month" axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: 'var(--muted-foreground)' }} />
                   <YAxis axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: 'var(--muted-foreground)' }} />
                   <RechartsTooltip 
-                    formatter={(value: number) => `$${value.toLocaleString(undefined, { minimumFractionDigits: 2 })}`}
+                    formatter={(value: any) => `$${Number(value).toLocaleString(undefined, { minimumFractionDigits: 2 })}`}
                     contentStyle={{ backgroundColor: 'rgba(0,0,0,0.8)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)' }}
                     itemStyle={{ color: '#fff' }}
                     cursor={{ fill: 'rgba(255,255,255,0.05)' }}
@@ -135,7 +135,7 @@ export default function AnalyticsPage() {
                   <XAxis dataKey="month" axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: 'var(--muted-foreground)' }} />
                   <YAxis axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: 'var(--muted-foreground)' }} />
                   <RechartsTooltip 
-                    formatter={(value: number) => `$${value.toLocaleString(undefined, { minimumFractionDigits: 2 })}`}
+                    formatter={(value: any) => `$${Number(value).toLocaleString(undefined, { minimumFractionDigits: 2 })}`}
                     contentStyle={{ backgroundColor: 'rgba(0,0,0,0.8)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)' }}
                     itemStyle={{ color: '#fff' }}
                   />

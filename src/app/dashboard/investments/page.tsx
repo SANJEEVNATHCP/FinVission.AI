@@ -96,7 +96,7 @@ export default function InvestmentsPage() {
                     ))}
                   </Pie>
                   <RechartsTooltip 
-                    formatter={(value: number) => `$${value.toLocaleString(undefined, { minimumFractionDigits: 2 })}`}
+                    formatter={(value: any) => `$${Number(value).toLocaleString(undefined, { minimumFractionDigits: 2 })}`}
                     contentStyle={{ backgroundColor: 'rgba(0,0,0,0.8)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)' }}
                     itemStyle={{ color: '#fff' }}
                   />
